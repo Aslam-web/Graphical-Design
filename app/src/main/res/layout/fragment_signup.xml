@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.SignUp.SignUpFragment">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="cursive"
+                android:text="Welcome"
+                android:textSize="36dp"
+                android:textColor="@color/primary"
+                android:layout_marginVertical="10dp"
+                android:textStyle="bold"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="cursive"
+                android:text=" , let's get started"
+                android:textColor="@color/primary"
+                android:textSize="28dp"
+                android:textStyle="italic"
+                android:gravity="bottom"/>
+
+        </LinearLayout>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:neumorph_shapeType="pressed"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="12dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_username"
+                android:drawablePadding="3dp"
+                android:paddingVertical="12dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Username"
+                android:textSize="16dp"
+                android:fontFamily="@font/walkway"
+
+                app:met_floatingLabelTextSize="11sp"
+                app:met_floatingLabelPadding="3dp"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="true"
+                />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:neumorph_shapeType="pressed"
+            android:paddingVertical="12dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="3dp"
+                android:paddingVertical="12dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Email"
+                android:textSize="16dp"
+                android:fontFamily="@font/walkway"
+
+                app:met_floatingLabelTextSize="11sp"
+                app:met_floatingLabelPadding="3dp"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="true"
+                />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:neumorph_shapeType="pressed"
+            android:paddingVertical="12dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="3dp"
+                android:paddingVertical="12dp"
+                android:inputType="textPassword"
+                android:layout_marginHorizontal="10dp"
+                android:hint="Password"
+                android:textSize="16dp"
+                android:fontFamily="@font/walkway"
+
+                app:met_floatingLabelTextSize="11sp"
+                app:met_floatingLabelPadding="3dp"
+                app:met_floatingLabel="highlight"
+                app:met_hideUnderline="true"
+                />
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/buttonRegister"
+            style="@style/ShapeAppearance.Neumorph.Button"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/greatvibes"
+            android:gravity="center"
+            android:shadowRadius="0"
+            android:text="R e g i s t e r"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:neumorph_backgroundColor="@color/buttons"
+            app:neumorph_shadowElevation="0dp"
+            app:neumorph_shapeType="flat" />
+
+    </LinearLayout>
+
+    <include
+        android:layout_below="@+id/linear1"
+        layout="@layout/bottom_signup_options"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>

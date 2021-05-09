@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:lineSpacingExtra="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Sign Up using"
+            android:textSize="16dp"
+            android:textStyle="bold|italic"
+            android:lineSpacingExtra="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <soup.neumorphism.NeumorphImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/fb_logo" />
+
+        <soup.neumorphism.NeumorphImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/google_logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLinkToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Already have an account ?"
+        android:textSize="20dp"
+        android:textColor="@color/links"
+        android:textStyle="normal"
+        android:gravity="center"/>
+
+</RelativeLayout>
